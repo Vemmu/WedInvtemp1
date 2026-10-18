@@ -1,6 +1,6 @@
 # Wedding Invitation: Template 4 "Shubh Vivah"
 
-A Hindu wedding invitation with **3D bride and groom figures in traditional attire** and the **Saat Phere around the sacred fire**. It's bilingual (English and हिन्दी) and uses real CC0 photos. The "Kesariya" palette is paper cream, sindoor red, kesar saffron, haldi yellow, peacock teal and sona gold. Fonts are Rozha One, Tiro Devanagari Hindi and Mukta, all with Devanagari support.
+A Hindu wedding invitation with **3D bride and groom figures in traditional attire** and the **Saat Phere around the sacred fire**. It's bilingual (English and हिन्दी) and uses real CC0 photos. The "Kesariya" palette is paper cream, sindoor red, kesar saffron, haldi yellow, peacock teal and sona gold. Fonts are Rozha One, Tiro Devanagari Hindi and Mukta, all with Devanagari support..
 
 **Stack:** Next.js 15 (App Router) · React 19 · Tailwind CSS · Three.js + @react-three/fiber + drei · GSAP ScrollTrigger · Lenis
 
