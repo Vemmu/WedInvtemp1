@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "lenis/dist/lenis.css";
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    text-size-adjust: 100%;
+  }
+  html.scroll-locked,
+  html.scroll-locked body {
+    overflow: hidden;
+  }
+  body {
+    @apply bg-paper font-sans text-sindoor-900 antialiased;
+  }
+  ::selection {
+    @apply bg-sindoor-600 text-paper;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display font-normal;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-kesar-500;
+  }
+}
+
+@layer components {
+  .section {
+    @apply relative z-10 mx-auto w-full max-w-6xl px-5 py-24 sm:px-8 md:py-32;
+  }
+  /* deep sindoor band with a faint gold lattice (jaali) */
+  .band-sindoor {
+    @apply relative z-10 bg-sindoor-800 text-paper;
+    background-image:
+      radial-gradient(900px 500px at 50% 0%, rgba(242, 140, 15, 0.25), transparent 70%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48'><path d='M24 0 L48 24 L24 48 L0 24 Z' fill='none' stroke='%23D4AF37' stroke-opacity='0.12'/><circle cx='24' cy='24' r='3' fill='%23D4AF37' fill-opacity='0.12'/></svg>");
+  }
+  .band-peacock {
+    @apply relative z-10 bg-peacock-900 text-paper;
+    background-image: radial-gradient(800px 500px at 100% 0%, rgba(26, 156, 149, 0.35), transparent 70%), radial-gradient(700px 500px at 0% 100%, rgba(212, 175, 55, 0.14), transparent 70%);
+  }
+  .eyebrow {
+    @apply text-[11px] font-semibold uppercase tracking-[0.38em] text-kesar-600;
+  }
+  .hi {
+    @apply font-serif;
+  }
+  .card {
+    @apply rounded-[1.5rem] border border-sona-400/40 bg-paper-100 shadow-warm;
+  }
+  .btn-sindoor {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-sindoor-600 px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-paper shadow-warm transition-all duration-300 hover:bg-sindoor-700 active:scale-[0.98] disabled:opacity-50;
+  }
+  .btn-sona {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-sona-600 via-sona-300 to-sona-600 px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-sindoor-900 shadow-sona transition-transform duration-300 hover:scale-[1.03] active:scale-[0.98] disabled:opacity-50;
+  }
+  .btn-line {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-sindoor-700/30 px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-sindoor-800 transition-colors duration-300 hover:border-sindoor-700 hover:bg-sindoor-700 hover:text-paper;
+  }
+  .btn-line-light {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-paper/35 px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-paper transition-colors duration-300 hover:bg-paper hover:text-sindoor-900;
+  }
+  .field {
+    @apply w-full rounded-xl border border-sindoor-800/20 bg-white px-4 py-3.5 text-sindoor-900 placeholder:text-sindoor-900/35 focus:border-kesar-500 focus:outline-none focus:ring-2 focus:ring-kesar-300/60;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .text-sona-gradient {
+    background: linear-gradient(100deg, #b08d22 0%, #f8ebc4 30%, #d4af37 55%, #f1d98a 80%, #b08d22 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
