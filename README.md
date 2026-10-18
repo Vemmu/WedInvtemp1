@@ -48,7 +48,7 @@ The form POSTs JSON to `wedding.rsvp.endpoint`, which defaults to the built-in `
 
 ## WhatsApp link preview
 
-`src/app/opengraph-image.tsx` renders a 1200×630 preview card with diyas on the Ganga. Set `NEXT_PUBLIC_SITE_URL` to your domain before sharing. The preview uses English and transliteration because the image renderer can't shape Devanagari; the website itself renders Hindi correctly.
+`src/app/opengraph-image.tsx` renders a 1200×630 preview card with diyas on the Ganga. Set `NEXT_SITE_URL` to your domain before sharing. The preview uses English and transliteration because the image renderer can't shape Devanagari; the website itself renders Hindi correctly.
 
 ## Performance and accessibility
 

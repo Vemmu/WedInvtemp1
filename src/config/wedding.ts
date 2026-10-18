@@ -32,7 +32,7 @@ export type WeddingEvent = {
 const img = (file: string, alt: string, width: number, height: number): Photo => ({ src: `/images/${file}`, alt, width, height });
 
 export const wedding = {
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  siteUrl: process.env.NEXT_SITE_URL ?? "http://localhost:3000",
   timeZone: "Asia/Kolkata",
 
   bride: { firstName: "Aditi", fullName: "Aditi Sharma", hi: "अदिति" },
